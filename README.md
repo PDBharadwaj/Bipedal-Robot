@@ -38,7 +38,7 @@ The PID controller was successfully tuned to achieve:
 [Cruise controller](https://hackmd.io/_uploads/SyKU5ti5C.png)
 
 ### Mechanics and Control of Robotic Manipulators
-#### Aim
+
 Watched the YouTube playlist on Mechanics and Control of Robotic Manipulators: <br>
 https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
 
