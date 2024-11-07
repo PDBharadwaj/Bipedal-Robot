@@ -35,7 +35,8 @@ The PID controller was successfully tuned to achieve:
 - A rise time of approximately 10 seconds.
 - A maximum overshoot of less than 5%.
 
-[Cruise controller](https://hackmd.io/_uploads/SyKU5ti5C.png)
+![SyKU5ti5C](https://github.com/user-attachments/assets/12fbe362-feef-4fc4-8daf-3996e7bcd4f1)
+
 
 ### Mechanics and Control of Robotic Manipulators
 
@@ -57,9 +58,13 @@ https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
 4. **Define FK Parameters**:
     - Set up the necessary parameters for forward kinematics.
     - Inputted the specific values corresponding to the desired assembly configuration.
-  
-[Result graph1](https://hackmd.io/_uploads/r1ypsFi9C.png)
-[Result graph2](https://hackmd.io/_uploads/Hy8k2KjcC.png)
+![r1ypsFi9C](https://github.com/user-attachments/assets/bd05b103-90f6-4bf6-8e9e-319d5f298c55)
+
+![Hy8k2KjcC](https://github.com/user-attachments/assets/b349969b-c942-4df3-a044-4b022bbacceb)
+
+
+
+
 #### Result
 - Successfully defined the DH parameters and transformation matrices.
 - The forward kinematics function accurately calculates the end-effector position for the specified assembly.
@@ -73,7 +78,8 @@ https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
 3. **Develop the Inverse Kinematics Function**:
     - Create a function to calculate the relative inverse kinematics (IK) parameters for the desired assembly configuration.
 
-[Code image](https://hackmd.io/_uploads/S1h-VqicA.png)
+![S1h-VqicA](https://github.com/user-attachments/assets/ee5ed72b-cf37-4a44-a702-6d1c51a95421)
+
 #### Result
 - Successfully defined the DH parameters and transformation matrices.
 - The inverse kinematics function accurately calculates the necessary joint angles for the specified end-effector position.
@@ -98,8 +104,10 @@ https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
    - Later, ploted the simulation based on these parameters.
 - Our task was to trace the trajectory of a sine wave and a line by 3DoF Arm manipulator using inverse kinematics. We went with the geometrical method to find the equations of the joint angles.
 
-[Result image3](https://hackmd.io/_uploads/By8LkHSWJx.gif)
-[Result image4](https://hackmd.io/_uploads/BJlDkrSWkg.gif)
+![By8LkHSWJx](https://github.com/user-attachments/assets/5d0eb689-a231-469b-8235-3af9d5096b50)
+
+![BJlDkrSWkg](https://github.com/user-attachments/assets/41201e08-5798-4b3e-a81c-6a34fc4ff971)
+
 
 #### Result
 - Successfully simulated the arm manipulator in the XYZ plane using the chosen method.
@@ -127,8 +135,8 @@ def inverse_kinematics(x, y):
 
 ```
 
+![rJNpf4H-yx](https://github.com/user-attachments/assets/9a32321c-6504-4178-abde-647eb72cf70a)
 
-[Result image5](https://hackmd.io/_uploads/rJNpf4H-yx.gif)
 
 #### Result
 - Successfully simulated the 2DoF in XY Plane according to the required trajectory.
@@ -140,7 +148,10 @@ def inverse_kinematics(x, y):
 - We used Autodesk Fusion 360 Software to create the CAD model for our 2DoF robot.
 - After creating the model for one leg, we mirrored it for the other leg.
 - Here is the final model that we came up with.
-[Cad model](https://hackmd.io/_uploads/HkIrL97-yx.gif)
+
+![HkIrL97-yx](https://github.com/user-attachments/assets/20429521-7abb-49c0-bde2-b3560cba6a04)
+
+
 
 ---
 
