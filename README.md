@@ -16,7 +16,6 @@ PID (Proportional-Integral-Derivative) control is a fundamental control theory t
 
 - **Derivative (D):** The derivative part predicts future error by considering the rate of change of the error. It reduces overshoot and prevents oscillations by slowing down the system as it approaches the desired value.
 
----
 ### Task 1: Cruise Controller 
 #### Aim
 To develop a Cruise Controller using Python and Matlab(simulink) for maintaining desired set point velocity of a car.
@@ -97,7 +96,6 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
 - Successfully defined the DH parameters and transformation matrices.
 - The inverse kinematics function accurately calculates the necessary joint angles for the specified end-effector position.
 
----
 
 ### Task 3: Simulating an Arm Manipulator in XYZ Plane in Python Using matplotlib 
 #### PROCEDURE
