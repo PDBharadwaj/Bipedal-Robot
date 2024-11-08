@@ -176,7 +176,13 @@ We used 3 main components in our project.
 1. 6 servos, with 3 in each leg. One in hip, one in knee and one in foot(to balance the COM while the robot is walking).
 2. Arduino UNO to connect all electronic equipments.
 3. PCA9685 with a 5V power supply to connect and power multiple servo motors easily.
-We assembled all the 3D-printed parts along with the hardware components and integrated both the hardware and software. From the previous python code for sine and line we stored the calculated joint angles at each instance into a text file and uploaded those angles into the arduino code. Hence the servos will rotate at the desired angle which will help the biped to trace the require trajectory and walk forward.
+
+**Arduino UNO to PCA9685 connection:**
+![arduino-pca](https://github.com/user-attachments/assets/51e6f32a-ce32-46e1-8aae-3cf286877e9c)
+
+- We assembled all the 3D-printed parts along with the hardware components and integrated both the hardware and software.
+- From the previous python code for sine and line we stored the calculated joint angles at each instance into a text file and uploaded those angles into the arduino code.
+- Hence the servos will rotate at the desired angle which will help the biped to trace the require trajectory and walk forward.
 
 ---
 
