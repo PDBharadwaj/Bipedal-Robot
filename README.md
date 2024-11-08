@@ -101,8 +101,8 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
 #### PROCEDURE
 **Choose a Method for Simulation:**:
 - We can use one of the following approaches:
--   **Denavit-Hartenberg (DH) Method**
--   **Closed-Form Solution**
+-   Denavit-Hartenberg (DH) Method
+-   Closed-Form Solution
 -   Numerical Analysis
 -   Geometrical Method
 
