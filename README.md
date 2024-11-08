@@ -100,7 +100,7 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
 ### Task 3: Simulating an Arm Manipulator in XYZ Plane in Python Using matplotlib 
 #### PROCEDURE
 **Choose a Method for Simulation:**:
-- We can use one of the following approaches:
+We can use one of the following approaches:
 -   Denavit-Hartenberg (DH) Method
 -   Closed-Form Solution
 -   Numerical Analysis
