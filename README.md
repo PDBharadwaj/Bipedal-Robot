@@ -23,20 +23,27 @@ To develop a Cruise Controller using Python and Matlab(simulink) for maintaining
 In Python
 1. Set the mass of the vehicle(m) and the drag coefficient(b).
 2. Define the set-point velocity(v=20 m/s).
-3. Implement aPID controller in Python.
+3. Implemente a PID controller in Python.
 4. Determine the transfer function of the system.
 
 In Simulink
 1. Build the circuit of the cruise controller using the PID controller in Simulink.
 2. Initially, set the integral gain (Ki) and derivative gain (Kd) to zero and tune the proportional gain (Kp).
 3. After tuning Kp, tune the values of Ki and Kd to refine the controller's performance.
+
+Simulink circuit design:
+![Screenshot 2024-11-07 235542](https://github.com/user-attachments/assets/b502fb53-0f23-4376-9cfc-54237ecd8016)
 #### Result
+
 The PID controller was successfully tuned to achieve:
 - A rise time of approximately 10 seconds.
 - A maximum overshoot of less than 5%.
 
+Python result:
 ![SyKU5ti5C](https://github.com/user-attachments/assets/12fbe362-feef-4fc4-8daf-3996e7bcd4f1)
 
+Simulink result:
+![Screenshot 2024-11-07 235517](https://github.com/user-attachments/assets/a90c50b4-ed2a-40e9-8107-4ad6e709757c)
 
 ### Mechanics and Control of Robotic Manipulators
 
@@ -45,7 +52,11 @@ https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
 
 ---
 
-### Task 2: Finding FK/IK of Arm Manipulator in XY Plane in Python Using matplotlib 
+forward kinematics and inverse kinematics are the important concepts behind this leg movement control.
+**Forward kinematics:**
+when the joint parameters are known, the end effector move accordingly. 
+
+### Task 2: Finding FK/IK of Manipulator arm in XY Plane in Python Using matplotlib 
 #### FORWARD KINEMATICS (FK)
 1. **Construct the DH Table**:
     - Defined the Denavit-Hartenberg (DH) parameters for the manipulator.
@@ -58,6 +69,8 @@ https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
 4. **Define FK Parameters**:
     - Set up the necessary parameters for forward kinematics.
     - Inputted the specific values corresponding to the desired assembly configuration.
+  
+  
 ![r1ypsFi9C](https://github.com/user-attachments/assets/bd05b103-90f6-4bf6-8e9e-319d5f298c55)
 
 ![Hy8k2KjcC](https://github.com/user-attachments/assets/b349969b-c942-4df3-a044-4b022bbacceb)
@@ -117,7 +130,7 @@ https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
 
 ### IMPLEMENTATION ON PROJECT
 - We decided to make 2dof manipulator as Bipedal Robot legs.
-- Formed the inverse kinematics equations and solve them on the Sinusoidal trajectory followed by retracment of Straight Line trajectory backwards.
+- Formed the inverse kinematics equations and solved them on the Sinusoidal trajectory followed by retracment of Straight Line trajectory backwards.
 - Here is the python pseudocode for finding ik solutions:
 ```python
 def inverse_kinematics(x, y):
