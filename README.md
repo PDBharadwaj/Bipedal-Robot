@@ -1,11 +1,7 @@
 # Bipedal Robot
 ## Objective
 This repository provides an overview of the fundamentals, design, and hardware implementation of a bipedal robot. It focuses on the use of forward and inverse kinematics for leg movement control, maintaining stability through the center of mass balance concept, and integrating various hardware components to achieve a functional, walking bipedal robot.
-## Key Features
-- **Movement control**
-- **Feasible design**
-- **Stability**
-- **Hardware integration**
+
 ## Concepts behind it and related tasks
 ### PID Control Theory
 PID (Proportional-Integral-Derivative) control is a fundamental control theory that is used in control systems to maintain a desired output such as speed, position or temperature by continuously adjusting inputs based on feedback. A PID controller calculates the error as the difference between a desired setpoint (SP) and a measured process variable (PV). It then applies a correction based on three components: proportional, integral, and derivative terms.
@@ -32,7 +28,9 @@ In Simulink
 3. After tuning Kp, tune the values of Ki and Kd to refine the controller's performance.
 
 **Simulink circuit design:**
+
 ![Screenshot 2024-11-07 235542](https://github.com/user-attachments/assets/b502fb53-0f23-4376-9cfc-54237ecd8016)
+
 #### Result
 
 The PID controller was successfully tuned to achieve:
@@ -73,12 +71,13 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
     - Set up the necessary parameters for forward kinematics.
     - Inputted the specific values corresponding to the desired assembly configuration.
    
-![WhatsApp Video 2024-11-08 at 2 56 41 PM](https://github.com/user-attachments/assets/bbcc3a39-8b33-4206-93d2-557aeead6b1e)
-![WhatsApp Video 2024-11-08 at 5 23 16 PM](https://github.com/user-attachments/assets/70865eed-6e1d-4e9a-b3c7-0176f15c5572)
-
 #### Result
 - Successfully defined the DH parameters and transformation matrices.
 - The forward kinematics function accurately calculates the end-effector position for the specified assembly.
+
+![WhatsApp Video 2024-11-08 at 2 56 41 PM](https://github.com/user-attachments/assets/bbcc3a39-8b33-4206-93d2-557aeead6b1e)
+
+![WhatsApp Video 2024-11-08 at 5 23 16 PM](https://github.com/user-attachments/assets/70865eed-6e1d-4e9a-b3c7-0176f15c5572)
 
 #### INVERSE KINEMATICS (IK)
 1. **Construct the DH Table**:
@@ -89,15 +88,15 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
 3. **Develop the Inverse Kinematics Function**:
     - Create a function to calculate the relative inverse kinematics (IK) parameters for the desired assembly configuration.
 
-![WhatsApp Video 2024-11-08 at 3 51 17 PM](https://github.com/user-attachments/assets/41cdd9e7-82ab-4d8d-9c85-c435e8f71b97)
-![WhatsApp Video 2024-11-08 at 5 23 24 PM](https://github.com/user-attachments/assets/6d017b42-6ecf-463b-bfee-0a550df742df)
-
 #### Result
 - Successfully defined the DH parameters and transformation matrices.
 - The inverse kinematics function accurately calculates the necessary joint angles for the specified end-effector position.
 
+![WhatsApp Video 2024-11-08 at 3 51 17 PM](https://github.com/user-attachments/assets/41cdd9e7-82ab-4d8d-9c85-c435e8f71b97)
 
-### Task 3: Simulating an Arm Manipulator in XYZ Plane in Python Using matplotlib 
+![WhatsApp Video 2024-11-08 at 5 23 24 PM](https://github.com/user-attachments/assets/6d017b42-6ecf-463b-bfee-0a550df742df)
+
+### Task 3: Simulating a Manipulator Arm in XYZ Plane in Python Using matplotlib 
 #### PROCEDURE
 **Choose a Method for Simulation:**
 
@@ -116,14 +115,13 @@ We can use one of the following approaches:
    - Later, ploted the simulation based on these parameters.
 - Our task was to trace the trajectory of a sine wave and a line by 3DoF Arm manipulator using inverse kinematics. We went with the geometrical method to find the equations of the joint angles.
 
-![By8LkHSWJx](https://github.com/user-attachments/assets/5d0eb689-a231-469b-8235-3af9d5096b50)
-
-![BJlDkrSWkg](https://github.com/user-attachments/assets/41201e08-5798-4b3e-a81c-6a34fc4ff971)
-
-
 #### Result
 - Successfully simulated the arm manipulator in the XYZ plane using the chosen method.
 - The IK parameters were accurately determined, and the manipulator followed the intended trajectory in the simulation.
+
+![By8LkHSWJx](https://github.com/user-attachments/assets/5d0eb689-a231-469b-8235-3af9d5096b50)
+
+![BJlDkrSWkg](https://github.com/user-attachments/assets/41201e08-5798-4b3e-a81c-6a34fc4ff971)
 
 ---
 
@@ -147,11 +145,10 @@ def inverse_kinematics(x, y):
 
 ```
 
-![rJNpf4H-yx](https://github.com/user-attachments/assets/9a32321c-6504-4178-abde-647eb72cf70a)
-
-
 #### Result
 - Successfully simulated the 2DoF in XY Plane according to the required trajectory.
+
+![rJNpf4H-yx](https://github.com/user-attachments/assets/9a32321c-6504-4178-abde-647eb72cf70a)
 
 ---
 
@@ -174,7 +171,8 @@ We used 3 main components in our project.
 3. PCA9685 with a 5V power supply to connect and power multiple servo motors easily.
 
 **Arduino UNO to PCA9685 connection:**
-![arduino-pca](https://github.com/user-attachments/assets/51e6f32a-ce32-46e1-8aae-3cf286877e9c)
+
+![arduino-pca](https://github.com/user-attachments/assets/d62bc7e4-5902-483c-95cf-90bbe5d8cc5f)
 
 - We assembled all the 3D-printed parts along with the hardware components and integrated both the hardware and software.
 - From the previous python code for sine and line we stored the calculated joint angles at each instance into a text file and uploaded those angles into the arduino code.
