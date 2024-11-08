@@ -9,11 +9,11 @@ This repository provides an overview of the fundamentals, design, and hardware i
 ### PID Control Theory
 PID (Proportional-Integral-Derivative) control is a fundamental control theory that is used in control systems to maintain a desired output such as speed, position or temperature by continuously adjusting inputs based on feedback. A PID controller calculates the error as the difference between a desired setpoint (SP) and a measured process variable (PV). It then applies a correction based on three components: proportional, integral, and derivative terms.
 
-- Proportional (P): The proportional term responds to the current error. It provides an output that is directly proportional to the error, allowing the system to correct deviations quickly.
+- **Proportional (P):** The proportional term responds to the current error. It provides an output that is directly proportional to the error, allowing the system to correct deviations quickly.
 
-- Integral (I): The integral term accounts for the accumulation of past errors. It helps to eliminate small errors that may not be fully corrected by the proportional term alone, achieving precise control over time.
+- **Integral (I):** The integral term accounts for the accumulation of past errors. It helps to eliminate small errors that may not be fully corrected by the proportional term alone, achieving precise control over time.
 
-- Derivative (D): The derivative part predicts future error by considering the rate of change of the error. It reduces overshoot and prevents oscillations by slowing down the system as it approaches the desired value.
+- **Derivative (D):** The derivative part predicts future error by considering the rate of change of the error. It reduces overshoot and prevents oscillations by slowing down the system as it approaches the desired value.
 
 ---
 ### Task 1: Cruise Controller 
@@ -39,10 +39,10 @@ The PID controller was successfully tuned to achieve:
 - A rise time of approximately 10 seconds.
 - A maximum overshoot of less than 5%.
 
-Python result:
+**Python result:**
 ![SyKU5ti5C](https://github.com/user-attachments/assets/12fbe362-feef-4fc4-8daf-3996e7bcd4f1)
 
-Simulink result:
+**Simulink result:**
 ![Screenshot 2024-11-07 235517](https://github.com/user-attachments/assets/a90c50b4-ed2a-40e9-8107-4ad6e709757c)
 
 ### Mechanics and Control of Robotic Manipulators
@@ -52,9 +52,11 @@ https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
 
 ---
 
-forward kinematics and inverse kinematics are the important concepts behind this leg movement control.
-**Forward kinematics:**
-when the joint parameters are known, the end effector move accordingly. 
+In bipedal robots, kinematics plays a crucial role in defining and controlling movement. Kinematics is divided into forward kinematics and inverse kinematics, both of which are essential for achieving precise and coordinated motion in robotic manipulators.
+
+- **Forward Kinematics:** Forward kinematics involves calculating the robot's end-effector position based on given joint angles. In a bipedal robot, forward kinematics is used to determine the exact position of each leg segment when joint angles are set, enabling accurate placement of the feet during walking.
+
+- **Inverse Kinematics:** Inverse kinematics is the reverse process, where the desired position of the end-effector (such as the foot) is specified, and the necessary joint angles are calculated to achieve that position. This is particularly important in bipedal robots for defining precise leg trajectories that maintain stability and allow for smooth, balanced walking motions.
 
 ### Task 2: Finding FK/IK of Manipulator arm in XY Plane in Python Using matplotlib 
 #### FORWARD KINEMATICS (FK)
@@ -69,7 +71,8 @@ when the joint parameters are known, the end effector move accordingly.
 4. **Define FK Parameters**:
     - Set up the necessary parameters for forward kinematics.
     - Inputted the specific values corresponding to the desired assembly configuration.
-  
+![ezgif-3-5a3db12781](https://github.com/user-attachments/assets/4f0c746b-0014-4a4d-9d50-5d369164e443)
+
   
 ![r1ypsFi9C](https://github.com/user-attachments/assets/bd05b103-90f6-4bf6-8e9e-319d5f298c55)
 
@@ -173,7 +176,7 @@ We used 3 main components in our project.
 1. 6 servos, with 3 in each leg. One in hip, one in knee and one in foot(to balance the COM while the robot is walking).
 2. Arduino UNO to connect all electronic equipments.
 3. PCA9685 with a 5V power supply to connect and power multiple servo motors easily.
-From the previous python code for sine and line we stored the calculated joint angles at each instance into a text file and uploaded those angles into the arduino code. Hence the servos will rotate at the desired angle which will help the biped to trace the require trajectory and walk forward.
+We assembled all the 3D-printed parts along with the hardware components and integrated both the hardware and software. From the previous python code for sine and line we stored the calculated joint angles at each instance into a text file and uploaded those angles into the arduino code. Hence the servos will rotate at the desired angle which will help the biped to trace the require trajectory and walk forward.
 
 ---
 
