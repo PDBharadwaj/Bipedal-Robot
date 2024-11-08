@@ -46,12 +46,13 @@ The PID controller was successfully tuned to achieve:
 **Simulink result:**
 ![Screenshot 2024-11-07 235517](https://github.com/user-attachments/assets/a90c50b4-ed2a-40e9-8107-4ad6e709757c)
 
+---
+
 ### Mechanics and Control of Robotic Manipulators
 
 Watched the YouTube playlist on Mechanics and Control of Robotic Manipulators: <br>
 https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
 
----
 
 In bipedal robots, kinematics plays a crucial role in defining and controlling movement. Kinematics is divided into forward kinematics and inverse kinematics, both of which are essential for achieving precise and coordinated motion in robotic manipulators.
 
