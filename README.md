@@ -1,4 +1,5 @@
 # Bipedal Robot
+## Objective
 This repository provides an overview of the fundamentals, design, and hardware implementation of a bipedal robot. It focuses on the use of forward and inverse kinematics for leg movement control, maintaining stability through the center of mass balance concept, and integrating various hardware components to achieve a functional, walking bipedal robot.
 ## Key Features
 - **Movement control**
@@ -31,7 +32,7 @@ In Simulink
 2. Initially, set the integral gain (Ki) and derivative gain (Kd) to zero and tune the proportional gain (Kp).
 3. After tuning Kp, tune the values of Ki and Kd to refine the controller's performance.
 
-Simulink circuit design:
+**Simulink circuit design:**
 ![Screenshot 2024-11-07 235542](https://github.com/user-attachments/assets/b502fb53-0f23-4376-9cfc-54237ecd8016)
 #### Result
 
@@ -71,15 +72,9 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
 4. **Define FK Parameters**:
     - Set up the necessary parameters for forward kinematics.
     - Inputted the specific values corresponding to the desired assembly configuration.
-![ezgif-3-5a3db12781](https://github.com/user-attachments/assets/4f0c746b-0014-4a4d-9d50-5d369164e443)
-
-  
-![r1ypsFi9C](https://github.com/user-attachments/assets/bd05b103-90f6-4bf6-8e9e-319d5f298c55)
-
-![Hy8k2KjcC](https://github.com/user-attachments/assets/b349969b-c942-4df3-a044-4b022bbacceb)
-
-
-
+   
+![WhatsApp Video 2024-11-08 at 2 56 41 PM](https://github.com/user-attachments/assets/bbcc3a39-8b33-4206-93d2-557aeead6b1e)
+![WhatsApp Video 2024-11-08 at 5 23 16 PM](https://github.com/user-attachments/assets/70865eed-6e1d-4e9a-b3c7-0176f15c5572)
 
 #### Result
 - Successfully defined the DH parameters and transformation matrices.
@@ -94,7 +89,8 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
 3. **Develop the Inverse Kinematics Function**:
     - Create a function to calculate the relative inverse kinematics (IK) parameters for the desired assembly configuration.
 
-![S1h-VqicA](https://github.com/user-attachments/assets/ee5ed72b-cf37-4a44-a702-6d1c51a95421)
+![WhatsApp Video 2024-11-08 at 3 51 17 PM](https://github.com/user-attachments/assets/41cdd9e7-82ab-4d8d-9c85-c435e8f71b97)
+![WhatsApp Video 2024-11-08 at 5 23 24 PM](https://github.com/user-attachments/assets/6d017b42-6ecf-463b-bfee-0a550df742df)
 
 #### Result
 - Successfully defined the DH parameters and transformation matrices.
