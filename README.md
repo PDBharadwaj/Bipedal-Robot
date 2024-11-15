@@ -1,8 +1,9 @@
 # Bipedal Robot
+![WhatsApp Image 2024-11-15 at 4 49 05 PM](https://github.com/user-attachments/assets/a5e59df9-59af-4c63-8f5e-0d8ce6466e73)
 ## Objective
 This project aims to develop a bipedal robot, a two-legged robotic system designed to replicate human gait dynamics. Here, the robot’s movement is controlled by precise limb positioning through inverse kinematics, while stability is maintained by managing the center of mass during walking. This repository provides an overview of the fundamental concepts, codes and model for simulating and executing stable bipedal locomotion, with an emphasis on kinematics and balance control.
 
-##Tasks
+## Tasks
 
 ### Task 1: Cruise Controller 
 #### Aim
@@ -37,20 +38,10 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
 
 - **Inverse Kinematics:** Inverse kinematics is the reverse process, where the desired position of the end-effector (such as the foot) is specified, and the necessary joint angles are calculated to achieve that position. This is particularly important in bipedal robots for defining precise leg trajectories that maintain stability and allow for smooth, balanced walking motions.
 
-### Task 2: Finding FK/IK of Manipulator arm in XY Plane in Python Using matplotlib 
-#### FORWARD KINEMATICS (FK)
-1. **Construct the DH Table**:
-    - Defined the Denavit-Hartenberg (DH) parameters for the manipulator.
-    - Used these parameters to create the DH transformation matrix.
-2. **Implement the DH Transformation Matrix**:
-    - Inputted the DH transformation matrix in Python.
-3. **Develop the Forward Kinematics Function**:
-    - Created a function that sequentially multiplies transformation matrices to compute the end-effector position.
-    - Post-multiplied the matrices according to the manipulator's configuration.
-4. **Define FK Parameters**:
-    - Set up the necessary parameters for forward kinematics.
-    - Inputted the specific values corresponding to the desired assembly configuration.
-   
+### Task 2: Forward & Inverse Kinematics 
+#### Aim
+To find FK/IK solutions of Manipulator arm in XY Plane in Python Using matplotlib 
+#### Forward Kinematics:
 #### Result
 - Successfully defined the DH parameters and transformation matrices.
 - The forward kinematics function accurately calculates the end-effector position for the specified assembly.
@@ -59,15 +50,7 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
 
 ![WhatsApp Video 2024-11-08 at 5 23 16 PM](https://github.com/user-attachments/assets/70865eed-6e1d-4e9a-b3c7-0176f15c5572)
 
-#### INVERSE KINEMATICS (IK)
-1. **Construct the DH Table**:
-    - Defined the Denavit-Hartenberg (DH) parameters for the manipulator.
-    - Used these parameters to create the DH transformation matrix.
-2. **Implement the DH Transformation Matrix**:
-    - Inputted the DH transformation matrix in Python.
-3. **Develop the Inverse Kinematics Function**:
-    - Create a function to calculate the relative inverse kinematics (IK) parameters for the desired assembly configuration.
-
+#### Inverse Kinematics:
 #### Result
 - Successfully defined the DH parameters and transformation matrices.
 - The inverse kinematics function accurately calculates the necessary joint angles for the specified end-effector position.
@@ -76,25 +59,9 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
 
 ![WhatsApp Video 2024-11-08 at 5 23 24 PM](https://github.com/user-attachments/assets/6d017b42-6ecf-463b-bfee-0a550df742df)
 
-### Task 3: Simulating a Manipulator Arm in XYZ Plane in Python Using matplotlib 
-#### PROCEDURE
-**Choose a Method for Simulation:**
-
-We can use one of the following approaches:
--   Denavit-Hartenberg (DH) Method
--   Closed-Form Solution
--   Numerical Analysis
--   Geometrical Method
-
-1. Using the DH Method:
-   - Defined the DH parameters and construct the DH transformation matrix.
-   - Written the inverse kinematics (IK) function to determine the joint angles for the intended trajectory.
-2. Using the Closed-Form Solution:
-   - Defined the forward kinematics (FK) equations for the required trajectory, at first.
-   - Then, solved these FK equations to obtain the IK parameters.
-   - Later, ploted the simulation based on these parameters.
-- Our task was to trace the trajectory of a sine wave and a line by 3DoF Arm manipulator using inverse kinematics. We went with the geometrical method to find the equations of the joint angles.
-
+### Task 3: Trajectory Tracing 
+#### Aim 
+To simulate 'a manipulator arm tracing a trajectory' in the XYZ plane using Python and Matplotlib.
 #### Result
 - Successfully simulated the arm manipulator in the XYZ plane using the chosen method.
 - The IK parameters were accurately determined, and the manipulator followed the intended trajectory in the simulation.
@@ -146,10 +113,12 @@ def inverse_kinematics(x, y):
 
 ### HARDWARE IMPLEMENTATION
 We used 3 main components in our project.
-1. 6 servos, with 3 in each leg. One in hip, one in knee and one in foot(to balance the COM while the robot is walking).
-2. Arduino UNO to connect all electronic equipments.
-3. PCA9685 with a 5V power supply to connect and power multiple servo motors easily.
 
+| **Component** | **Application** |
+|---------------|------------------------------------------|
+| Arduino UNO   | Used Arduino UNO to connect all electronic equipments. |  
+| Servo motors  | Placed 6 servos with 3 servos on each leg: one in hip, one in knee and one in foot (to balance the COM while the robot is walking). |
+| PCA9685       | Used PCA9685 (with a 5V power supply) to connect and power multiple servo motors easily. |
 ---
 
 ### FINAL IMPLEMENTATION
