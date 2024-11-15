@@ -1,13 +1,23 @@
-# Bipedal Robot
+# BIPEDAL ROBOT
 ![WhatsApp Image 2024-11-15 at 4 49 05 PM](https://github.com/user-attachments/assets/a5e59df9-59af-4c63-8f5e-0d8ce6466e73)
-## Objective
+## CONTENTS
+
+- [OBJECTIVE](#objective)
+- [TASKS](#tasks)
+- [IMPLEMENTATION ON PROJECT](#implementation-on-project)
+- [DESIGNING THE ROBOT](#designing-the-robot)
+- [HARDWARE IMPLEMENTATION](#hardware-implementation)
+- [FINAL IMPLEMENTATION](#final-implementation)
+
+## OBJECTIVE
 This project aims to develop a bipedal robot, a two-legged robotic system designed to replicate human gait dynamics. Here, the robot’s movement is controlled by precise limb positioning through inverse kinematics, while stability is maintained by managing the center of mass during walking. This repository provides an overview of the fundamental concepts, codes and model for simulating and executing stable bipedal locomotion, with an emphasis on kinematics and balance control.
 
-## Tasks
+## TASKS
 
 ### Task 1: Cruise Controller 
 #### Aim
 To develop a Cruise Controller using Python and Matlab(simulink) for maintaining desired set point velocity of a car.
+
 **Simulink circuit design:**
 
 ![Screenshot 2024-11-07 235542](https://github.com/user-attachments/assets/b502fb53-0f23-4376-9cfc-54237ecd8016)
@@ -41,8 +51,7 @@ In bipedal robots, kinematics plays a crucial role in defining and controlling m
 ### Task 2: Forward & Inverse Kinematics 
 #### Aim
 To find FK/IK solutions of Manipulator arm in XY Plane in Python Using matplotlib 
-#### Forward Kinematics:
-#### Result
+#### Forward Kinematics Result:
 - Successfully defined the DH parameters and transformation matrices.
 - The forward kinematics function accurately calculates the end-effector position for the specified assembly.
 
@@ -50,8 +59,7 @@ To find FK/IK solutions of Manipulator arm in XY Plane in Python Using matplotli
 
 ![WhatsApp Video 2024-11-08 at 5 23 16 PM](https://github.com/user-attachments/assets/70865eed-6e1d-4e9a-b3c7-0176f15c5572)
 
-#### Inverse Kinematics:
-#### Result
+#### Inverse Kinematics Result:
 - Successfully defined the DH parameters and transformation matrices.
 - The inverse kinematics function accurately calculates the necessary joint angles for the specified end-effector position.
 
@@ -72,7 +80,7 @@ To simulate 'a manipulator arm tracing a trajectory' in the XYZ plane using Pyth
 
 ---
 
-### IMPLEMENTATION ON PROJECT
+## IMPLEMENTATION ON PROJECT
 - We decided to make 2dof manipulator as Bipedal Robot legs.
 - Formed the inverse kinematics equations and solved them on the Sinusoidal trajectory followed by retracment of Straight Line trajectory backwards.
 - Here is the python pseudocode for finding ik solutions:
@@ -100,7 +108,7 @@ def inverse_kinematics(x, y):
 ---
 
 
-### DESIGNING THE ROBOT
+## DESIGNING THE ROBOT
 - We used Autodesk Fusion 360 Software to create the CAD model for our 2DoF robot.
 - After creating the model for one leg, we mirrored it for the other leg.
 - Here is the final model that we came up with.
@@ -111,7 +119,7 @@ def inverse_kinematics(x, y):
 
 ---
 
-### HARDWARE IMPLEMENTATION
+## HARDWARE IMPLEMENTATION
 We used 3 main components in our project.
 
 | **Component** | **Application** |
@@ -121,6 +129,6 @@ We used 3 main components in our project.
 | PCA9685       | Used PCA9685 (with a 5V power supply) to connect and power multiple servo motors easily. |
 ---
 
-### FINAL IMPLEMENTATION
+## FINAL IMPLEMENTATION
 
 ![Untitleddesign-ezgif com-video-speed](https://github.com/user-attachments/assets/e2e18482-1649-4838-ac25-0335463a5be7)
