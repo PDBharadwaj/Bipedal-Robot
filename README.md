@@ -2,12 +2,16 @@
 ![WhatsApp Image 2024-11-15 at 4 49 05 PM](https://github.com/user-attachments/assets/a5e59df9-59af-4c63-8f5e-0d8ce6466e73)
 ## CONTENTS
 
-- [OBJECTIVE](#objective)
-- [TASKS](#tasks)
-- [IMPLEMENTATION ON PROJECT](#implementation-on-project)
-- [DESIGNING THE ROBOT](#designing-the-robot)
-- [HARDWARE IMPLEMENTATION](#hardware-implementation)
-- [FINAL IMPLEMENTATION](#final-implementation)
+- [Objective](#objective)
+- [Tasks](#tasks)
+  - [Task 1 : Cruise Controller](#task-1-cruise-controller)
+  - [Task 2 : Forward & Inverse Kinematics Solutions](#task-2-forward--inverse-kinematics)
+  - [Task 3 : Trajectory Tracing](#task-3-trajectory-tracing)
+- [Project Implementation](#project-implementation)
+- [Design](#design)
+- [Electronic Components](#electronic-components)
+- [Final Implementation](#final-implementation)
+- [References](#references)
 
 ## OBJECTIVE
 This project aims to develop a bipedal robot, a two-legged robotic system designed to replicate human gait dynamics. Here, the robot’s movement is controlled by precise limb positioning through inverse kinematics, while stability is maintained by managing the center of mass during walking. This repository provides an overview of the fundamental concepts, codes and model for simulating and executing stable bipedal locomotion, with an emphasis on kinematics and balance control.
@@ -37,10 +41,6 @@ The PID controller was successfully tuned to achieve:
 ---
 
 ### Mechanics and Control of Robotic Manipulators
-
-Watched the YouTube playlist on Mechanics and Control of Robotic Manipulators: <br>
-https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
-
 
 In bipedal robots, kinematics plays a crucial role in defining and controlling movement. Kinematics is divided into forward kinematics and inverse kinematics, both of which are essential for achieving precise and coordinated motion in robotic manipulators.
 
@@ -80,7 +80,7 @@ To simulate 'a manipulator arm tracing a trajectory' in the XYZ plane using Pyth
 
 ---
 
-## IMPLEMENTATION ON PROJECT
+## PROJECT IMPLEMENTATION
 - We decided to make 2dof manipulator as Bipedal Robot legs.
 - Formed the inverse kinematics equations and solved them on the Sinusoidal trajectory followed by retracment of Straight Line trajectory backwards.
 - Here is the python pseudocode for finding ik solutions:
@@ -108,10 +108,8 @@ def inverse_kinematics(x, y):
 ---
 
 
-## DESIGNING THE ROBOT
+## DESIGN
 - We used Autodesk Fusion 360 Software to create the CAD model for our 2DoF robot.
-- After creating the model for one leg, we mirrored it for the other leg.
-- Here is the final model that we came up with.
 
 ![HkIrL97-yx](https://github.com/user-attachments/assets/20429521-7abb-49c0-bde2-b3560cba6a04)
 
@@ -119,7 +117,7 @@ def inverse_kinematics(x, y):
 
 ---
 
-## HARDWARE IMPLEMENTATION
+## ELECTRONIC COMPONENTS
 We used 3 main components in our project.
 
 | **Component** | **Application** |
@@ -132,3 +130,8 @@ We used 3 main components in our project.
 ## FINAL IMPLEMENTATION
 
 ![Untitleddesign-ezgif com-video-speed](https://github.com/user-attachments/assets/e2e18482-1649-4838-ac25-0335463a5be7)
+
+## References
+- https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
+- https://youtube.com/playlist?list=PLn8PRpmsu08pQBgjxYFXSsODEF3Jqmm-y&si=w728cftgoCuM-PjS
+- https://youtube.com/playlist?list=PLUMWjy5jgHK1NC52DXXrriwihVrYZKqjk&si=36dh-z4ip2kWO_XO
