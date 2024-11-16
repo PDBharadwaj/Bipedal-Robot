@@ -110,9 +110,7 @@ def inverse_kinematics(x, y):
 
 ## DESIGN
 - We used Autodesk Fusion 360 Software to create the CAD model for our 2DoF robot.
-
-![HkIrL97-yx](https://github.com/user-attachments/assets/20429521-7abb-49c0-bde2-b3560cba6a04)
-
+![Untitledvideo-MadewithClipchamp-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/16161beb-5bbe-4efb-8737-0b6dab87f72a)
 
 
 ---
@@ -131,7 +129,7 @@ We used 3 main components in our project.
 
 ![Untitleddesign-ezgif com-video-speed](https://github.com/user-attachments/assets/e2e18482-1649-4838-ac25-0335463a5be7)
 
-## References
+## REFERENCES
 - https://www.youtube.com/playlist?list=PLyqSpQzTE6M-tWPjnJjFo9sHGWxgCnGrh
 - https://youtube.com/playlist?list=PLn8PRpmsu08pQBgjxYFXSsODEF3Jqmm-y&si=w728cftgoCuM-PjS
 - https://youtube.com/playlist?list=PLUMWjy5jgHK1NC52DXXrriwihVrYZKqjk&si=36dh-z4ip2kWO_XO
